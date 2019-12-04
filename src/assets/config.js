@@ -37,7 +37,7 @@ export const category = async () =>{
 //token 
 export const token = async()=>{
     let token = ''
-    await axios.get('https://opentdb.com/api_token.php?command=reques').then(res =>{
+    await axios.get('https://opentdb.com/api_token.php?command=request').then(res =>{
         token = res.data.token
     })
     return await token
